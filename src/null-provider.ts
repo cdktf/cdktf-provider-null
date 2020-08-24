@@ -48,7 +48,7 @@ export class NullProvider extends TerraformProvider {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       alias: this._alias,
     };

@@ -81,7 +81,7 @@ export class DataNullDataSource extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       has_computed_default: this._hasComputedDefault,
       inputs: this._inputs,
