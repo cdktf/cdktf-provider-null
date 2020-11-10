@@ -43,36 +43,46 @@ export class DataNullDataSource extends TerraformDataSource {
   // has_computed_default - computed: true, optional: true, required: false
   private _hasComputedDefault?: string;
   public get hasComputedDefault() {
-    return this._hasComputedDefault ?? this.getStringAttribute('has_computed_default');
+    return this.getStringAttribute('has_computed_default');
   }
-  public set hasComputedDefault(value: string | undefined) {
+  public set hasComputedDefault(value: string) {
     this._hasComputedDefault = value;
+  }
+  public resetHasComputedDefault() {
+    this._hasComputedDefault = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hasComputedDefaultInput() {
+    return this._hasComputedDefault
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // inputs - computed: false, optional: true, required: false
   private _inputs?: { [key: string]: string };
   public get inputs() {
-    return this._inputs;
+    return this.interpolationForAttribute('inputs') as any;
   }
-  public set inputs(value: { [key: string]: string } | undefined) {
+  public set inputs(value: { [key: string]: string } ) {
     this._inputs = value;
   }
+  public resetInputs() {
+    this._inputs = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inputsInput() {
+    return this._inputs
+  }
 
-  // outputs - computed: true, optional: false, required: true
+  // outputs - computed: true, optional: false, required: false
   public outputs(key: string): string {
     return new StringMap(this, 'outputs').lookup(key);
   }
 
-  // random - computed: true, optional: false, required: true
+  // random - computed: true, optional: false, required: false
   public get random() {
     return this.getStringAttribute('random');
   }

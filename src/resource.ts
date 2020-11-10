@@ -38,21 +38,24 @@ export class Resource extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // triggers - computed: false, optional: true, required: false
   private _triggers?: { [key: string]: string };
   public get triggers() {
-    return this._triggers;
+    return this.interpolationForAttribute('triggers') as any;
   }
-  public set triggers(value: { [key: string]: string } | undefined) {
+  public set triggers(value: { [key: string]: string } ) {
     this._triggers = value;
+  }
+  public resetTriggers() {
+    this._triggers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get triggersInput() {
+    return this._triggers
   }
 
   // =========

@@ -40,8 +40,15 @@ export class NullProvider extends TerraformProvider {
   public get alias() {
     return this._alias;
   }
-  public set alias(value: string | undefined) {
+  public set alias(value: string  | undefined) {
     this._alias = value;
+  }
+  public resetAlias() {
+    this._alias = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get aliasInput() {
+    return this._alias
   }
 
   // =========
