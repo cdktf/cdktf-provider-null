@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ResourceConfig extends TerraformMetaArguments {
+export interface ResourceConfig extends cdktf.TerraformMetaArguments {
   readonly triggers?: { [key: string]: string };
 }
 
 // Resource
 
-export class Resource extends TerraformResource {
+export class Resource extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -64,7 +63,7 @@ export class Resource extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      triggers: this._triggers,
+      triggers: cdktf.hashMapper(cdktf.anyToTerraform)(this._triggers),
     };
   }
 }

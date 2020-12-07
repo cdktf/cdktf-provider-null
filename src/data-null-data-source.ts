@@ -2,20 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { StringMap } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataNullDataSourceConfig extends TerraformMetaArguments {
+export interface DataNullDataSourceConfig extends cdktf.TerraformMetaArguments {
   readonly hasComputedDefault?: string;
   readonly inputs?: { [key: string]: string };
 }
 
 // Resource
 
-export class DataNullDataSource extends TerraformDataSource {
+export class DataNullDataSource extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -79,7 +77,7 @@ export class DataNullDataSource extends TerraformDataSource {
 
   // outputs - computed: true, optional: false, required: false
   public outputs(key: string): string {
-    return new StringMap(this, 'outputs').lookup(key);
+    return new cdktf.StringMap(this, 'outputs').lookup(key);
   }
 
   // random - computed: true, optional: false, required: false
@@ -93,8 +91,8 @@ export class DataNullDataSource extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      has_computed_default: this._hasComputedDefault,
-      inputs: this._inputs,
+      has_computed_default: cdktf.stringToTerraform(this._hasComputedDefault),
+      inputs: cdktf.hashMapper(cdktf.anyToTerraform)(this._inputs),
     };
   }
 }

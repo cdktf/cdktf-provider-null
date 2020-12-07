@@ -2,7 +2,7 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformProvider } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
@@ -13,7 +13,7 @@ export interface NullProviderConfig {
 
 // Resource
 
-export class NullProvider extends TerraformProvider {
+export class NullProvider extends cdktf.TerraformProvider {
 
   // ===========
   // INITIALIZER
@@ -57,7 +57,7 @@ export class NullProvider extends TerraformProvider {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alias: this._alias,
+      alias: cdktf.stringToTerraform(this._alias),
     };
   }
 }
