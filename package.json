@@ -33,7 +33,7 @@
     "organization": true
   },
   "devDependencies": {
-    "@cdktf/provider-project": "^0.1.8",
+    "@cdktf/provider-project": "^0.1.9",
     "@types/jest": "^26.0.7",
     "@types/node": "^10.17.0",
     "cdktf": "0.1.0",
@@ -121,8 +121,8 @@
         "module": "cdktf_cdktf_provider_null"
       },
       "dotnet": {
-        "namespace": "HashiCorp.Cdktf.ProviderNull",
-        "packageId": "HashiCorp.Cdktf.ProviderNull"
+        "namespace": "HashiCorp.Cdktf.Providers.Null",
+        "packageId": "HashiCorp.Cdktf.Providers.Null"
       }
     },
     "tsc": {
