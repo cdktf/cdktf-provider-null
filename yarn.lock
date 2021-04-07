@@ -3707,17 +3707,17 @@ jsii-srcmak@^0.1.195:
     yargs "^15.4.1"
 
 jsii@^1.12.0, jsii@^1.9.0:
-  version "1.26.0"
-  resolved "https://registry.yarnpkg.com/jsii/-/jsii-1.26.0.tgz#8994498b69a616be7c255285dc6d8142b5032b61"
-  integrity sha512-ZUu5N8+u12VyNkPgSgvVzIhZ+aEAd531zDZK4qkth7UsGNhSy4zBz9BJMSSKnaVV0oR6Pvehhg5DJ3dCu8qJrw==
+  version "1.27.0"
+  resolved "https://registry.yarnpkg.com/jsii/-/jsii-1.27.0.tgz#7dc6716ad5c68d6a0c0ff913ff656cf2bbe56ec7"
+  integrity sha512-EP1NIeheeUw4WpGESkOK7Kb/bT9bBlOunlQuQb+KSMKYq+Zh8uWuFxzTYbt3pg/UdaVis5YD0jsdVgQFVU7ufA==
   dependencies:
-    "@jsii/spec" "^1.26.0"
+    "@jsii/spec" "^1.27.0"
     case "^1.6.3"
     colors "^1.4.0"
     deep-equal "^2.0.5"
     fs-extra "^9.1.0"
     log4js "^6.3.0"
-    semver "^7.3.4"
+    semver "^7.3.5"
     semver-intersect "^1.4.0"
     sort-json "^2.0.0"
     spdx-license-list "^6.4.0"
@@ -5478,9 +5478,9 @@ stack-utils@^2.0.2:
     escape-string-regexp "^2.0.0"
 
 standard-version@^9:
-  version "9.1.1"
-  resolved "https://registry.yarnpkg.com/standard-version/-/standard-version-9.1.1.tgz#7561df6351b075a44544ce3d3ebcffcb9582ba5a"
-  integrity sha512-PF9JnRauBwH7DAkmefYu1mB2Kx0MVG13udqDTFmDUiogbyikBAHBdMrVuauxtAb2YIkyZ3FMYCNv0hqUKMOPww==
+  version "9.2.0"
+  resolved "https://registry.yarnpkg.com/standard-version/-/standard-version-9.2.0.tgz#d4e64b201ec1abb8a677b265d8755e5e8b9e33a3"
+  integrity sha512-utJcqjk/wR4sePSwDoRcc5CzJ6S+kec5Hd0+1TJI+j1TRYuuptweAnEUdkkjGf2vYoGab2ezefyVtW065HZ1Uw==
   dependencies:
     chalk "^2.4.2"
     conventional-changelog "3.1.24"
