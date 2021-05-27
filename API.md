@@ -4,9 +4,9 @@
 
 Name|Description
 ----|-----------
-[DataNullDataSource](#cdktf-provider-null-datanulldatasource)|*No description*
-[NullProvider](#cdktf-provider-null-nullprovider)|*No description*
-[Resource](#cdktf-provider-null-resource)|*No description*
+[DataNullDataSource](#cdktf-provider-null-datanulldatasource)|Represents a {@link https://www.terraform.io/docs/providers/null/d/data_source.html null_data_source}.
+[NullProvider](#cdktf-provider-null-nullprovider)|Represents a {@link https://www.terraform.io/docs/providers/null null}.
+[Resource](#cdktf-provider-null-resource)|Represents a {@link https://www.terraform.io/docs/providers/null/r/resource.html null_resource}.
 
 
 **Structs**
@@ -21,7 +21,7 @@ Name|Description
 
 ## class DataNullDataSource  <a id="cdktf-provider-null-datanulldatasource"></a>
 
-
+Represents a {@link https://www.terraform.io/docs/providers/null/d/data_source.html null_data_source}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
@@ -29,21 +29,21 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 ### Initializer
 
 
-
+Create a new {@link https://www.terraform.io/docs/providers/null/d/data_source.html null_data_source} Data Source.
 
 ```ts
 new DataNullDataSource(scope: Construct, id: string, config?: DataNullDataSourceConfig)
 ```
 
-* **scope** (<code>[Construct](#constructs-construct)</code>)  *No description*
-* **id** (<code>string</code>)  *No description*
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
 * **config** (<code>[DataNullDataSourceConfig](#cdktf-provider-null-datanulldatasourceconfig)</code>)  *No description*
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
-  * **hasComputedDefault** (<code>string</code>)  *No description* __*Optional*__
-  * **inputs** (<code>Map<string, string></code>)  *No description* __*Optional*__
+  * **hasComputedDefault** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source.html#has_computed_default DataNullDataSource#has_computed_default}. __*Optional*__
+  * **inputs** (<code>Map<string, string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source.html#inputs DataNullDataSource#inputs}. __*Optional*__
 
 
 
@@ -115,7 +115,7 @@ __Returns__:
 
 ## class NullProvider  <a id="cdktf-provider-null-nullprovider"></a>
 
-
+Represents a {@link https://www.terraform.io/docs/providers/null null}.
 
 __Implements__: [IConstruct](#constructs-iconstruct)
 __Extends__: [TerraformProvider](#cdktf-terraformprovider)
@@ -123,14 +123,14 @@ __Extends__: [TerraformProvider](#cdktf-terraformprovider)
 ### Initializer
 
 
-
+Create a new {@link https://www.terraform.io/docs/providers/null null} Resource.
 
 ```ts
 new NullProvider(scope: Construct, id: string, config?: NullProviderConfig)
 ```
 
-* **scope** (<code>[Construct](#constructs-construct)</code>)  *No description*
-* **id** (<code>string</code>)  *No description*
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
 * **config** (<code>[NullProviderConfig](#cdktf-provider-null-nullproviderconfig)</code>)  *No description*
   * **alias** (<code>string</code>)  Alias name. __*Optional*__
 
@@ -175,7 +175,7 @@ __Returns__:
 
 ## class Resource  <a id="cdktf-provider-null-resource"></a>
 
-
+Represents a {@link https://www.terraform.io/docs/providers/null/r/resource.html null_resource}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -183,20 +183,20 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-
+Create a new {@link https://www.terraform.io/docs/providers/null/r/resource.html null_resource} Resource.
 
 ```ts
 new Resource(scope: Construct, id: string, config?: ResourceConfig)
 ```
 
-* **scope** (<code>[Construct](#constructs-construct)</code>)  *No description*
-* **id** (<code>string</code>)  *No description*
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
 * **config** (<code>[ResourceConfig](#cdktf-provider-null-resourceconfig)</code>)  *No description*
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
-  * **triggers** (<code>Map<string, string></code>)  *No description* __*Optional*__
+  * **triggers** (<code>Map<string, string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/r/resource.html#triggers Resource#triggers}. __*Optional*__
 
 
 
@@ -249,8 +249,8 @@ Name | Type | Description
 -----|------|-------------
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
-**hasComputedDefault**? | <code>string</code> | __*Optional*__
-**inputs**? | <code>Map<string, string></code> | __*Optional*__
+**hasComputedDefault**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source.html#has_computed_default DataNullDataSource#has_computed_default}.<br/>__*Optional*__
+**inputs**? | <code>Map<string, string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source.html#inputs DataNullDataSource#inputs}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 
@@ -282,7 +282,7 @@ Name | Type | Description
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
-**triggers**? | <code>Map<string, string></code> | __*Optional*__
+**triggers**? | <code>Map<string, string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/r/resource.html#triggers Resource#triggers}.<br/>__*Optional*__
 
 
 
