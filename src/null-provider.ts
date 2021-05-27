@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/null/r/null_provider.html
+// https://www.terraform.io/docs/providers/null
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,18 +7,30 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface NullProviderConfig {
-  /** Alias name */
+  /**
+  * Alias name
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null#alias NullProvider#alias}
+  */
   readonly alias?: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/null null}
+*/
 export class NullProvider extends cdktf.TerraformProvider {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/null null} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options NullProviderConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: NullProviderConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'null',

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/null/r/data_null_data_source.html
+// https://www.terraform.io/docs/providers/null/d/data_source.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,18 +7,32 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataNullDataSourceConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source.html#has_computed_default DataNullDataSource#has_computed_default}
+  */
   readonly hasComputedDefault?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source.html#inputs DataNullDataSource#inputs}
+  */
   readonly inputs?: { [key: string]: string };
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/null/d/data_source.html null_data_source}
+*/
 export class DataNullDataSource extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/null/d/data_source.html null_data_source} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataNullDataSourceConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: DataNullDataSourceConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'null_data_source',
