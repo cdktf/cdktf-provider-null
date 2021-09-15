@@ -10,13 +10,18 @@ export interface ResourceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/r/resource.html#triggers Resource#triggers}
   */
-  readonly triggers?: { [key: string]: string };
+  readonly triggers?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/null/r/resource.html null_resource}
 */
 export class Resource extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "null_resource";
 
   // ===========
   // INITIALIZER
@@ -53,11 +58,11 @@ export class Resource extends cdktf.TerraformResource {
   }
 
   // triggers - computed: false, optional: true, required: false
-  private _triggers?: { [key: string]: string };
+  private _triggers?: { [key: string]: string } | cdktf.IResolvable;
   public get triggers() {
     return this.interpolationForAttribute('triggers') as any;
   }
-  public set triggers(value: { [key: string]: string } ) {
+  public set triggers(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._triggers = value;
   }
   public resetTriggers() {

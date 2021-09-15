@@ -23,7 +23,7 @@ Name|Description
 
 Represents a {@link https://www.terraform.io/docs/providers/null/d/data_source.html null_data_source}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -43,7 +43,7 @@ new DataNullDataSource(scope: Construct, id: string, config?: DataNullDataSource
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **hasComputedDefault** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source.html#has_computed_default DataNullDataSource#has_computed_default}. __*Optional*__
-  * **inputs** (<code>Map<string, string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source.html#inputs DataNullDataSource#inputs}. __*Optional*__
+  * **inputs** (<code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source.html#inputs DataNullDataSource#inputs}. __*Optional*__
 
 
 
@@ -54,10 +54,11 @@ Name | Type | Description
 -----|------|-------------
 **hasComputedDefault** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
-**inputs** | <code>Map<string, string></code> | <span></span>
+**inputs** | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | <span></span>
 **random** | <code>string</code> | <span></span>
 **hasComputedDefaultInput**? | <code>string</code> | __*Optional*__
-**inputsInput**? | <code>Map<string, string></code> | __*Optional*__
+**inputsInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -117,7 +118,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/null null}.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Extends__: [TerraformProvider](#cdktf-terraformprovider)
 
 ### Initializer
@@ -143,6 +144,7 @@ Name | Type | Description
 -----|------|-------------
 **alias**? | <code>string</code> | __*Optional*__
 **aliasInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -177,7 +179,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/null/r/resource.html null_resource}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -196,7 +198,7 @@ new Resource(scope: Construct, id: string, config?: ResourceConfig)
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
-  * **triggers** (<code>Map<string, string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/r/resource.html#triggers Resource#triggers}. __*Optional*__
+  * **triggers** (<code>Map<string, string> &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/r/resource.html#triggers Resource#triggers}. __*Optional*__
 
 
 
@@ -206,8 +208,9 @@ new Resource(scope: Construct, id: string, config?: ResourceConfig)
 Name | Type | Description 
 -----|------|-------------
 **id** | <code>string</code> | <span></span>
-**triggers** | <code>Map<string, string></code> | <span></span>
-**triggersInput**? | <code>Map<string, string></code> | __*Optional*__
+**triggers** | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | <span></span>
+**triggersInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -250,7 +253,7 @@ Name | Type | Description
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **hasComputedDefault**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source.html#has_computed_default DataNullDataSource#has_computed_default}.<br/>__*Optional*__
-**inputs**? | <code>Map<string, string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source.html#inputs DataNullDataSource#inputs}.<br/>__*Optional*__
+**inputs**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source.html#inputs DataNullDataSource#inputs}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 
@@ -282,7 +285,7 @@ Name | Type | Description
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
-**triggers**? | <code>Map<string, string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/r/resource.html#triggers Resource#triggers}.<br/>__*Optional*__
+**triggers**? | <code>Map<string, string> &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/r/resource.html#triggers Resource#triggers}.<br/>__*Optional*__
 
 
 
