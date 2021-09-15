@@ -14,13 +14,18 @@ export interface DataNullDataSourceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source.html#inputs DataNullDataSource#inputs}
   */
-  readonly inputs?: { [key: string]: string };
+  readonly inputs?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/null/d/data_source.html null_data_source}
 */
 export class DataNullDataSource extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "null_data_source";
 
   // ===========
   // INITIALIZER
@@ -74,11 +79,11 @@ export class DataNullDataSource extends cdktf.TerraformDataSource {
   }
 
   // inputs - computed: false, optional: true, required: false
-  private _inputs?: { [key: string]: string };
+  private _inputs?: { [key: string]: string } | cdktf.IResolvable;
   public get inputs() {
     return this.interpolationForAttribute('inputs') as any;
   }
-  public set inputs(value: { [key: string]: string } ) {
+  public set inputs(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._inputs = value;
   }
   public resetInputs() {

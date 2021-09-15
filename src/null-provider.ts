@@ -20,6 +20,11 @@ export interface NullProviderConfig {
 */
 export class NullProvider extends cdktf.TerraformProvider {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "null";
+
   // ===========
   // INITIALIZER
   // ===========
