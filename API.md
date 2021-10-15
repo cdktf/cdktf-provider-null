@@ -198,7 +198,7 @@ new Resource(scope: Construct, id: string, config?: ResourceConfig)
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
-  * **triggers** (<code>Map<string, string> &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/r/resource.html#triggers Resource#triggers}. __*Optional*__
+  * **triggers** (<code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/r/resource.html#triggers Resource#triggers}. __*Optional*__
 
 
 
@@ -208,7 +208,7 @@ new Resource(scope: Construct, id: string, config?: ResourceConfig)
 Name | Type | Description 
 -----|------|-------------
 **id** | <code>string</code> | <span></span>
-**triggers** | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | <span></span>
+**triggers** | <code>Map<string, string> &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **triggersInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -285,7 +285,7 @@ Name | Type | Description
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
-**triggers**? | <code>Map<string, string> &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/r/resource.html#triggers Resource#triggers}.<br/>__*Optional*__
+**triggers**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/r/resource.html#triggers Resource#triggers}.<br/>__*Optional*__
 
 
 
