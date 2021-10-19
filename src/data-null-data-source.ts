@@ -58,11 +58,11 @@ export class DataNullDataSource extends cdktf.TerraformDataSource {
   // ==========
 
   // has_computed_default - computed: true, optional: true, required: false
-  private _hasComputedDefault?: string;
+  private _hasComputedDefault?: string | undefined; 
   public get hasComputedDefault() {
     return this.getStringAttribute('has_computed_default');
   }
-  public set hasComputedDefault(value: string) {
+  public set hasComputedDefault(value: string | undefined) {
     this._hasComputedDefault = value;
   }
   public resetHasComputedDefault() {
@@ -79,11 +79,12 @@ export class DataNullDataSource extends cdktf.TerraformDataSource {
   }
 
   // inputs - computed: false, optional: true, required: false
-  private _inputs?: { [key: string]: string } | cdktf.IResolvable;
+  private _inputs?: { [key: string]: string } | cdktf.IResolvable | undefined; 
   public get inputs() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('inputs') as any;
   }
-  public set inputs(value: { [key: string]: string } | cdktf.IResolvable ) {
+  public set inputs(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
     this._inputs = value;
   }
   public resetInputs() {

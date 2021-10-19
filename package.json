@@ -8,23 +8,23 @@
   "scripts": {
     "clobber": "npx projen clobber",
     "compile": "jsii --silence-warnings=reserved-word",
-    "test:compile": "npx projen test:compile",
     "test": "jest --passWithNoTests",
     "build": "npx projen build",
     "bump": "npx projen bump",
     "unbump": "npx projen unbump",
     "publish:github": "npx projen publish:github",
-    "upgrade": "npx projen upgrade",
-    "upgrade-projen": "npx projen upgrade-projen",
     "default": "npx projen default",
     "watch": "npx projen watch",
     "package": "npx projen package",
     "compat": "npx projen compat",
     "publish:npm": "npx projen publish:npm",
+    "publish:maven": "npx projen publish:maven",
     "publish:pypi": "npx projen publish:pypi",
     "publish:nuget": "npx projen publish:nuget",
     "docgen": "npx projen docgen",
     "release": "npx projen release",
+    "upgrade": "npx projen upgrade",
+    "upgrade-projen": "npx projen upgrade-projen",
     "projen": "npx projen",
     "fetch": "mkdir -p src && rm -rf ./src/* && cdktf get && cp -R .gen/providers/null/* ./src/",
     "commit": "git add -A && git commit -am \"Update provider\" || echo \"No changes to commit\"",
@@ -40,8 +40,8 @@
   "devDependencies": {
     "@cdktf/provider-project": "^0.2.8",
     "@types/node": "^12.19.0",
-    "cdktf": "^0.6",
-    "cdktf-cli": "^0.6",
+    "cdktf": "^0.7",
+    "cdktf-cli": "^0.7",
     "constructs": "^10.0.0",
     "dot-prop": "^5.2.0",
     "jsii": "^1.33.0",
@@ -49,12 +49,12 @@
     "jsii-docgen": "^1.8.110",
     "jsii-pacmak": "^1.33.0",
     "npm-check-updates": "^11",
-    "projen": "^0.28.28",
+    "projen": "^0.31.0",
     "standard-version": "^9",
     "typescript": "^3.9.10"
   },
   "peerDependencies": {
-    "cdktf": "^0.6",
+    "cdktf": "^0.7",
     "constructs": "^10.0.0"
   },
   "bundledDependencies": [],
@@ -79,6 +79,13 @@
   "jsii": {
     "outdir": "dist",
     "targets": {
+      "java": {
+        "package": "com.hashicorp.cdktf.providers.null",
+        "maven": {
+          "groupId": "com.hashicorp",
+          "artifactId": "cdktf-provider-null"
+        }
+      },
       "python": {
         "distName": "cdktf-cdktf-provider-null",
         "module": "cdktf_cdktf_provider_null"
