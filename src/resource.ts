@@ -58,11 +58,12 @@ export class Resource extends cdktf.TerraformResource {
   }
 
   // triggers - computed: false, optional: true, required: false
-  private _triggers?: { [key: string]: string } | cdktf.IResolvable;
+  private _triggers?: { [key: string]: string } | cdktf.IResolvable | undefined; 
   public get triggers() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('triggers') as any;
   }
-  public set triggers(value: { [key: string]: string } | cdktf.IResolvable ) {
+  public set triggers(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
     this._triggers = value;
   }
   public resetTriggers() {

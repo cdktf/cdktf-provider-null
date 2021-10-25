@@ -40,8 +40,8 @@
   "devDependencies": {
     "@cdktf/provider-project": "^0.2.8",
     "@types/node": "^12.19.0",
-    "cdktf": "^0.6",
-    "cdktf-cli": "^0.6",
+    "cdktf": "^0.7",
+    "cdktf-cli": "^0.7",
     "constructs": "^10.0.0",
     "dot-prop": "^5.2.0",
     "jsii": "^1.33.0",
@@ -54,7 +54,7 @@
     "typescript": "^3.9.10"
   },
   "peerDependencies": {
-    "cdktf": "^0.6",
+    "cdktf": "^0.7",
     "constructs": "^10.0.0"
   },
   "bundledDependencies": [],
