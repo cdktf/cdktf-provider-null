@@ -138,9 +138,9 @@
     node-fetch "^2.6.1"
 
 "@cdktf/provider-project@^0.2.8":
-  version "0.2.18"
-  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.2.18.tgz#fb246c1cec22f50703a810ce5e9503ec0be69f22"
-  integrity sha512-Em/bbT3d2Q+9fWh0eXdQP7mfofKbkdOIU84V7pu/BiFKkTAeAJ8XXthB9kmVrPuvHsDT23bTneeAMtDqDXxO3w==
+  version "0.2.22"
+  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.2.22.tgz#e33694eed89afe477f59df0a0cf70e8dd08ead03"
+  integrity sha512-HXIunLAuR/dOYnQzmd011/CzV5Sp3tH/19XhQMlR1eDg16uPd4ceZzGbxCiAfN/BqfBVw5fo8yqJUzVwora1JA==
   dependencies:
     change-case "^4.1.2"
 
@@ -4544,10 +4544,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.28.28:
-  version "0.28.28"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.28.28.tgz#91a8dfae026fbbb063db16f864aed33b5656d8d7"
-  integrity sha512-iDObwAukBeFdN2dPLRipLlhdeN90gfGinr7JDQcWlityhA7PFUMYTkTBr035XZnNrgLgu44pAiIZPki22CyUwg==
+projen@^0.31.12:
+  version "0.31.12"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.31.12.tgz#854015af1d7bb2b842720d0e2e42eaa4d70b39bc"
+  integrity sha512-PLmf58kjUblEBXnGbAQBDl+KHJMQg5lAPHAYwjBjzXkPXTlzDU6wWh8e8b4kWnoUQGGQ+LJOvWOmE1F7NKN5gQ==
   dependencies:
     "@iarna/toml" "^2.2.5"
     chalk "^4.1.2"
