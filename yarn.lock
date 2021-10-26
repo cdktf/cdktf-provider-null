@@ -149,9 +149,9 @@
     is-valid-domain "^0.1.2"
 
 "@cdktf/provider-project@^0.2.8":
-  version "0.2.22"
-  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.2.22.tgz#e33694eed89afe477f59df0a0cf70e8dd08ead03"
-  integrity sha512-HXIunLAuR/dOYnQzmd011/CzV5Sp3tH/19XhQMlR1eDg16uPd4ceZzGbxCiAfN/BqfBVw5fo8yqJUzVwora1JA==
+  version "0.2.23"
+  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.2.23.tgz#5610eccc0288edf1a9000a7cbbdaca681cd6914e"
+  integrity sha512-g7fGvqm0NPSTDL3I2+B5pa7byMvV5dgTJzycX/hGLQFTLzUplSo7bZpUR7C/jIA7uRQIYANjgKqB6f7R1apgAA==
   dependencies:
     change-case "^4.1.2"
 
@@ -3522,25 +3522,6 @@ jsii@1.37.0:
   dependencies:
     "@jsii/check-node" "1.37.0"
     "@jsii/spec" "^1.37.0"
-    case "^1.6.3"
-    colors "^1.4.0"
-    deep-equal "^2.0.5"
-    fs-extra "^9.1.0"
-    log4js "^6.3.0"
-    semver "^7.3.5"
-    semver-intersect "^1.4.0"
-    sort-json "^2.0.0"
-    spdx-license-list "^6.4.0"
-    typescript "~3.9.10"
-    yargs "^16.2.0"
-
-jsii@^1.33.0:
-  version "1.33.0"
-  resolved "https://registry.yarnpkg.com/jsii/-/jsii-1.33.0.tgz#b6086e31799583c91b86802fe627a0865123004b"
-  integrity sha512-0WIWlrRtoQNrp7iyEyNMoPRzvjd2EK8/Zgn/tWyzpjaMZur9HevZuk4lduCthTly/Gs9A7u1Ajdyp1cBrALeBQ==
-  dependencies:
-    "@jsii/check-node" "1.33.0"
-    "@jsii/spec" "^1.33.0"
     case "^1.6.3"
     colors "^1.4.0"
     deep-equal "^2.0.5"
