@@ -23,7 +23,7 @@ Name|Description
 
 Represents a {@link https://www.terraform.io/docs/providers/null/d/data_source.html null_data_source}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -52,11 +52,11 @@ new DataNullDataSource(scope: Construct, id: string, config?: DataNullDataSource
 
 Name | Type | Description 
 -----|------|-------------
+**hasComputedDefault** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**inputs** | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | <span></span>
 **random** | <code>string</code> | <span></span>
-**hasComputedDefault**? | <code>string</code> | __*Optional*__
 **hasComputedDefaultInput**? | <code>string</code> | __*Optional*__
-**inputs**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | __*Optional*__
 **inputsInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -179,7 +179,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/null/r/resource.html null_resource}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -208,7 +208,7 @@ new Resource(scope: Construct, id: string, config?: ResourceConfig)
 Name | Type | Description 
 -----|------|-------------
 **id** | <code>string</code> | <span></span>
-**triggers**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | __*Optional*__
+**triggers** | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | <span></span>
 **triggersInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
