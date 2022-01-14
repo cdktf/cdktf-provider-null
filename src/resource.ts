@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/null/r/resource.html
+// https://www.terraform.io/docs/providers/null/r/resource
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface ResourceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/r/resource.html#triggers Resource#triggers}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/r/resource#triggers Resource#triggers}
   */
   readonly triggers?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/null/r/resource.html null_resource}
+* Represents a {@link https://www.terraform.io/docs/providers/null/r/resource null_resource}
 */
 export class Resource extends cdktf.TerraformResource {
 
@@ -28,7 +28,7 @@ export class Resource extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/null/r/resource.html null_resource} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/null/r/resource null_resource} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
