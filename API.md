@@ -4,9 +4,9 @@
 
 Name|Description
 ----|-----------
-[DataNullDataSource](#cdktf-provider-null-datanulldatasource)|Represents a {@link https://www.terraform.io/docs/providers/null/d/data_source.html null_data_source}.
+[DataNullDataSource](#cdktf-provider-null-datanulldatasource)|Represents a {@link https://www.terraform.io/docs/providers/null/d/data_source null_data_source}.
 [NullProvider](#cdktf-provider-null-nullprovider)|Represents a {@link https://www.terraform.io/docs/providers/null null}.
-[Resource](#cdktf-provider-null-resource)|Represents a {@link https://www.terraform.io/docs/providers/null/r/resource.html null_resource}.
+[Resource](#cdktf-provider-null-resource)|Represents a {@link https://www.terraform.io/docs/providers/null/r/resource null_resource}.
 
 
 **Structs**
@@ -21,7 +21,7 @@ Name|Description
 
 ## class DataNullDataSource  <a id="cdktf-provider-null-datanulldatasource"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/null/d/data_source.html null_data_source}.
+Represents a {@link https://www.terraform.io/docs/providers/null/d/data_source null_data_source}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
@@ -29,7 +29,7 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/null/d/data_source.html null_data_source} Data Source.
+Create a new {@link https://www.terraform.io/docs/providers/null/d/data_source null_data_source} Data Source.
 
 ```ts
 new DataNullDataSource(scope: Construct, id: string, config?: DataNullDataSourceConfig)
@@ -42,8 +42,8 @@ new DataNullDataSource(scope: Construct, id: string, config?: DataNullDataSource
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
-  * **hasComputedDefault** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source.html#has_computed_default DataNullDataSource#has_computed_default}. __*Optional*__
-  * **inputs** (<code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source.html#inputs DataNullDataSource#inputs}. __*Optional*__
+  * **hasComputedDefault** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source#has_computed_default DataNullDataSource#has_computed_default}. __*Optional*__
+  * **inputs** (<code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source#inputs DataNullDataSource#inputs}. __*Optional*__
 
 
 
@@ -177,7 +177,7 @@ __Returns__:
 
 ## class Resource  <a id="cdktf-provider-null-resource"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/null/r/resource.html null_resource}.
+Represents a {@link https://www.terraform.io/docs/providers/null/r/resource null_resource}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
@@ -185,7 +185,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/null/r/resource.html null_resource} Resource.
+Create a new {@link https://www.terraform.io/docs/providers/null/r/resource null_resource} Resource.
 
 ```ts
 new Resource(scope: Construct, id: string, config?: ResourceConfig)
@@ -198,7 +198,7 @@ new Resource(scope: Construct, id: string, config?: ResourceConfig)
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
-  * **triggers** (<code>Map<string, string> &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/r/resource.html#triggers Resource#triggers}. __*Optional*__
+  * **triggers** (<code>Map<string, string> &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/r/resource#triggers Resource#triggers}. __*Optional*__
 
 
 
@@ -252,8 +252,8 @@ Name | Type | Description
 -----|------|-------------
 **count**?🔹 | <code>number &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
-**hasComputedDefault**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source.html#has_computed_default DataNullDataSource#has_computed_default}.<br/>__*Optional*__
-**inputs**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source.html#inputs DataNullDataSource#inputs}.<br/>__*Optional*__
+**hasComputedDefault**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source#has_computed_default DataNullDataSource#has_computed_default}.<br/>__*Optional*__
+**inputs**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source#inputs DataNullDataSource#inputs}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 
@@ -285,7 +285,7 @@ Name | Type | Description
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
-**triggers**? | <code>Map<string, string> &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/r/resource.html#triggers Resource#triggers}.<br/>__*Optional*__
+**triggers**? | <code>Map<string, string> &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/r/resource#triggers Resource#triggers}.<br/>__*Optional*__
 
 
 
