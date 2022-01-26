@@ -14,7 +14,7 @@ export interface DataNullDataSourceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source#inputs DataNullDataSource#inputs}
   */
-  readonly inputs?: { [key: string]: string } | cdktf.IResolvable;
+  readonly inputs?: { [key: string]: string };
 }
 
 /**
@@ -79,12 +79,11 @@ export class DataNullDataSource extends cdktf.TerraformDataSource {
   }
 
   // inputs - computed: false, optional: true, required: false
-  private _inputs?: { [key: string]: string } | cdktf.IResolvable; 
+  private _inputs?: { [key: string]: string }; 
   public get inputs() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('inputs') as any;
+    return this.getStringMapAttribute('inputs');
   }
-  public set inputs(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set inputs(value: { [key: string]: string }) {
     this._inputs = value;
   }
   public resetInputs() {
@@ -96,7 +95,7 @@ export class DataNullDataSource extends cdktf.TerraformDataSource {
   }
 
   // outputs - computed: true, optional: false, required: false
-  public outputs(key: string): string {
+  public outputs(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'outputs').lookup(key);
   }
 
@@ -112,7 +111,7 @@ export class DataNullDataSource extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       has_computed_default: cdktf.stringToTerraform(this._hasComputedDefault),
-      inputs: cdktf.hashMapper(cdktf.anyToTerraform)(this._inputs),
+      inputs: cdktf.hashMapper(cdktf.stringToTerraform)(this._inputs),
     };
   }
 }
