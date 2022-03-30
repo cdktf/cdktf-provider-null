@@ -25,7 +25,7 @@ export class DataNullDataSource extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "null_data_source";
+  public static readonly tfResourceType = "null_data_source";
 
   // ===========
   // INITIALIZER
@@ -42,7 +42,9 @@ export class DataNullDataSource extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'null_data_source',
       terraformGeneratorMetadata: {
-        providerName: 'null'
+        providerName: 'null',
+        providerVersion: '2.1.2',
+        providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
