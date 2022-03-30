@@ -21,7 +21,7 @@ export class Resource extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "null_resource";
+  public static readonly tfResourceType = "null_resource";
 
   // ===========
   // INITIALIZER
@@ -38,7 +38,9 @@ export class Resource extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'null_resource',
       terraformGeneratorMetadata: {
-        providerName: 'null'
+        providerName: 'null',
+        providerVersion: '2.1.2',
+        providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
