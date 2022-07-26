@@ -38,10 +38,13 @@ new DataNullDataSource(scope: Construct, id: string, config?: DataNullDataSource
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
 * **config** (<code>[DataNullDataSourceConfig](#cdktf-provider-null-datanulldatasourceconfig)</code>)  *No description*
+  * **connection** (<code>[ISSHProvisionerConnection](#cdktf-isshprovisionerconnection) &#124; [IWinrmProvisionerConnection](#cdktf-iwinrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **forEach** (<code>[ITerraformIterator](#cdktf-iterraformiterator)</code>)  *No description* __*Optional*__
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **provisioners** (<code>Array<[IFileProvisioner](#cdktf-ifileprovisioner) &#124; [ILocalExecProvisioner](#cdktf-ilocalexecprovisioner) &#124; [IRemoteExecProvisioner](#cdktf-iremoteexecprovisioner)></code>)  *No description* __*Optional*__
   * **hasComputedDefault** (<code>string</code>)  If set, its literal value will be stored and returned. __*Optional*__
   * **inputs** (<code>Map<string, string></code>)  A map of arbitrary strings that is copied into the `outputs` attribute, and accessible directly for interpolation. __*Optional*__
 
@@ -182,10 +185,13 @@ new Resource(scope: Construct, id: string, config?: ResourceConfig)
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
 * **config** (<code>[ResourceConfig](#cdktf-provider-null-resourceconfig)</code>)  *No description*
+  * **connection** (<code>[ISSHProvisionerConnection](#cdktf-isshprovisionerconnection) &#124; [IWinrmProvisionerConnection](#cdktf-iwinrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **forEach** (<code>[ITerraformIterator](#cdktf-iterraformiterator)</code>)  *No description* __*Optional*__
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **provisioners** (<code>Array<[IFileProvisioner](#cdktf-ifileprovisioner) &#124; [ILocalExecProvisioner](#cdktf-ilocalexecprovisioner) &#124; [IRemoteExecProvisioner](#cdktf-iremoteexecprovisioner)></code>)  *No description* __*Optional*__
   * **triggers** (<code>Map<string, string></code>)  A map of arbitrary strings that, when changed, will force the null resource to be replaced, re-running any associated provisioners. __*Optional*__
 
 
@@ -238,12 +244,15 @@ __Returns__:
 
 Name | Type | Description 
 -----|------|-------------
+**connection**?🔹 | <code>[ISSHProvisionerConnection](#cdktf-isshprovisionerconnection) &#124; [IWinrmProvisionerConnection](#cdktf-iwinrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
 **hasComputedDefault**? | <code>string</code> | If set, its literal value will be stored and returned.<br/>__*Optional*__
 **inputs**? | <code>Map<string, string></code> | A map of arbitrary strings that is copied into the `outputs` attribute, and accessible directly for interpolation.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+**provisioners**?🔹 | <code>Array<[IFileProvisioner](#cdktf-ifileprovisioner) &#124; [ILocalExecProvisioner](#cdktf-ilocalexecprovisioner) &#124; [IRemoteExecProvisioner](#cdktf-iremoteexecprovisioner)></code> | __*Optional*__
 
 
 
@@ -269,10 +278,13 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
+**connection**?🔹 | <code>[ISSHProvisionerConnection](#cdktf-isshprovisionerconnection) &#124; [IWinrmProvisionerConnection](#cdktf-iwinrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+**provisioners**?🔹 | <code>Array<[IFileProvisioner](#cdktf-ifileprovisioner) &#124; [ILocalExecProvisioner](#cdktf-ilocalexecprovisioner) &#124; [IRemoteExecProvisioner](#cdktf-iremoteexecprovisioner)></code> | __*Optional*__
 **triggers**? | <code>Map<string, string></code> | A map of arbitrary strings that, when changed, will force the null resource to be replaced, re-running any associated provisioners.<br/>__*Optional*__
 
 
