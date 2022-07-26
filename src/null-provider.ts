@@ -41,8 +41,8 @@ export class NullProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'null',
       terraformGeneratorMetadata: {
         providerName: 'null',
-        providerVersion: '2.1.2',
-        providerVersionConstraint: '~> 2.0'
+        providerVersion: '3.1.1',
+        providerVersionConstraint: '~> 3.0'
       },
       terraformProviderSource: 'null'
     });
