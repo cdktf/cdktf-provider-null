@@ -8,17 +8,14 @@ import * as cdktf from 'cdktf';
 
 export interface DataNullDataSourceConfig extends cdktf.TerraformMetaArguments {
   /**
+  * If set, its literal value will be stored and returned. If not, its value defaults to `"default"`. This argument exists primarily for testing and has little practical use.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source#has_computed_default DataNullDataSource#has_computed_default}
   */
   readonly hasComputedDefault?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source#id DataNullDataSource#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
+  * A map of arbitrary strings that is copied into the `outputs` attribute, and accessible directly for interpolation.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source#inputs DataNullDataSource#inputs}
   */
   readonly inputs?: { [key: string]: string };
@@ -50,8 +47,8 @@ export class DataNullDataSource extends cdktf.TerraformDataSource {
       terraformResourceType: 'null_data_source',
       terraformGeneratorMetadata: {
         providerName: 'null',
-        providerVersion: '2.1.2',
-        providerVersionConstraint: '~> 2.0'
+        providerVersion: '3.1.1',
+        providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -59,7 +56,6 @@ export class DataNullDataSource extends cdktf.TerraformDataSource {
       lifecycle: config.lifecycle
     });
     this._hasComputedDefault = config.hasComputedDefault;
-    this._id = config.id;
     this._inputs = config.inputs;
   }
 
@@ -83,20 +79,9 @@ export class DataNullDataSource extends cdktf.TerraformDataSource {
     return this._hasComputedDefault;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // inputs - computed: false, optional: true, required: false
@@ -133,7 +118,6 @@ export class DataNullDataSource extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       has_computed_default: cdktf.stringToTerraform(this._hasComputedDefault),
-      id: cdktf.stringToTerraform(this._id),
       inputs: cdktf.hashMapper(cdktf.stringToTerraform)(this._inputs),
     };
   }

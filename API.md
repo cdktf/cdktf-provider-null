@@ -42,9 +42,8 @@ new DataNullDataSource(scope: Construct, id: string, config?: DataNullDataSource
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
-  * **hasComputedDefault** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source#has_computed_default DataNullDataSource#has_computed_default}. __*Optional*__
-  * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source#id DataNullDataSource#id}. __*Optional*__
-  * **inputs** (<code>Map<string, string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source#inputs DataNullDataSource#inputs}. __*Optional*__
+  * **hasComputedDefault** (<code>string</code>)  If set, its literal value will be stored and returned. __*Optional*__
+  * **inputs** (<code>Map<string, string></code>)  A map of arbitrary strings that is copied into the `outputs` attribute, and accessible directly for interpolation. __*Optional*__
 
 
 
@@ -59,7 +58,6 @@ Name | Type | Description
 **outputs** | <code>[StringMap](#cdktf-stringmap)</code> | <span></span>
 **random** | <code>string</code> | <span></span>
 **hasComputedDefaultInput**? | <code>string</code> | __*Optional*__
-**idInput**? | <code>string</code> | __*Optional*__
 **inputsInput**? | <code>Map<string, string></code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -72,18 +70,6 @@ Name | Type | Description
 
 ```ts
 resetHasComputedDefault(): void
-```
-
-
-
-
-
-#### resetId() <a id="cdktf-provider-null-datanulldatasource-resetid"></a>
-
-
-
-```ts
-resetId(): void
 ```
 
 
@@ -200,8 +186,7 @@ new Resource(scope: Construct, id: string, config?: ResourceConfig)
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
-  * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/r/resource#id Resource#id}. __*Optional*__
-  * **triggers** (<code>Map<string, string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/r/resource#triggers Resource#triggers}. __*Optional*__
+  * **triggers** (<code>Map<string, string></code>)  A map of arbitrary strings that, when changed, will force the null resource to be replaced, re-running any associated provisioners. __*Optional*__
 
 
 
@@ -212,23 +197,10 @@ Name | Type | Description
 -----|------|-------------
 **id** | <code>string</code> | <span></span>
 **triggers** | <code>Map<string, string></code> | <span></span>
-**idInput**? | <code>string</code> | __*Optional*__
 **triggersInput**? | <code>Map<string, string></code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
-
-
-#### resetId() <a id="cdktf-provider-null-resource-resetid"></a>
-
-
-
-```ts
-resetId(): void
-```
-
-
-
 
 
 #### resetTriggers() <a id="cdktf-provider-null-resource-resettriggers"></a>
@@ -268,9 +240,8 @@ Name | Type | Description
 -----|------|-------------
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
-**hasComputedDefault**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source#has_computed_default DataNullDataSource#has_computed_default}.<br/>__*Optional*__
-**id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source#id DataNullDataSource#id}.<br/>__*Optional*__
-**inputs**? | <code>Map<string, string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source#inputs DataNullDataSource#inputs}.<br/>__*Optional*__
+**hasComputedDefault**? | <code>string</code> | If set, its literal value will be stored and returned.<br/>__*Optional*__
+**inputs**? | <code>Map<string, string></code> | A map of arbitrary strings that is copied into the `outputs` attribute, and accessible directly for interpolation.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 
@@ -300,10 +271,9 @@ Name | Type | Description
 -----|------|-------------
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
-**id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/r/resource#id Resource#id}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
-**triggers**? | <code>Map<string, string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/r/resource#triggers Resource#triggers}.<br/>__*Optional*__
+**triggers**? | <code>Map<string, string></code> | A map of arbitrary strings that, when changed, will force the null resource to be replaced, re-running any associated provisioners.<br/>__*Optional*__
 
 
 
