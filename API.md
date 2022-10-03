@@ -4,26 +4,28 @@
 
 Name|Description
 ----|-----------
-[DataNullDataSource](#cdktf-provider-null-datanulldatasource)|Represents a {@link https://www.terraform.io/docs/providers/null/d/data_source null_data_source}.
-[NullProvider](#cdktf-provider-null-nullprovider)|Represents a {@link https://www.terraform.io/docs/providers/null null}.
-[Resource](#cdktf-provider-null-resource)|Represents a {@link https://www.terraform.io/docs/providers/null/r/resource null_resource}.
+[dataNullDataSource.DataNullDataSource](#cdktf-provider-null-datanulldatasource-datanulldatasource)|Represents a {@link https://www.terraform.io/docs/providers/null/d/data_source null_data_source}.
+[provider.NullProvider](#cdktf-provider-null-provider-nullprovider)|Represents a {@link https://www.terraform.io/docs/providers/null null}.
+[resource.Resource](#cdktf-provider-null-resource-resource)|Represents a {@link https://www.terraform.io/docs/providers/null/r/resource null_resource}.
 
 
 **Structs**
 
 Name|Description
 ----|-----------
-[DataNullDataSourceConfig](#cdktf-provider-null-datanulldatasourceconfig)|*No description*
-[NullProviderConfig](#cdktf-provider-null-nullproviderconfig)|*No description*
-[ResourceConfig](#cdktf-provider-null-resourceconfig)|*No description*
+[dataNullDataSource.DataNullDataSourceConfig](#cdktf-provider-null-datanulldatasource-datanulldatasourceconfig)|*No description*
+[provider.NullProviderConfig](#cdktf-provider-null-provider-nullproviderconfig)|*No description*
+[resource.ResourceConfig](#cdktf-provider-null-resource-resourceconfig)|*No description*
 
 
 
-## class DataNullDataSource  <a id="cdktf-provider-null-datanulldatasource"></a>
+## class DataNullDataSource  <a id="cdktf-provider-null-datanulldatasource-datanulldatasource"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/null/d/data_source null_data_source}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: dataNullDataSource
+
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -32,12 +34,12 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 Create a new {@link https://www.terraform.io/docs/providers/null/d/data_source null_data_source} Data Source.
 
 ```ts
-new DataNullDataSource(scope: Construct, id: string, config?: DataNullDataSourceConfig)
+new dataNullDataSource.DataNullDataSource(scope: Construct, id: string, config?: DataNullDataSourceConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[DataNullDataSourceConfig](#cdktf-provider-null-datanulldatasourceconfig)</code>)  *No description*
+* **config** (<code>[dataNullDataSource.DataNullDataSourceConfig](#cdktf-provider-null-datanulldatasource-datanulldatasourceconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -67,7 +69,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetHasComputedDefault() <a id="cdktf-provider-null-datanulldatasource-resethascomputeddefault"></a>
+#### resetHasComputedDefault() <a id="cdktf-provider-null-datanulldatasource-datanulldatasource-resethascomputeddefault"></a>
 
 
 
@@ -79,7 +81,7 @@ resetHasComputedDefault(): void
 
 
 
-#### resetInputs() <a id="cdktf-provider-null-datanulldatasource-resetinputs"></a>
+#### resetInputs() <a id="cdktf-provider-null-datanulldatasource-datanulldatasource-resetinputs"></a>
 
 
 
@@ -91,7 +93,7 @@ resetInputs(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-null-datanulldatasource-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-null-datanulldatasource-datanulldatasource-synthesizeattributes"></a>
 
 
 
@@ -105,11 +107,13 @@ __Returns__:
 
 
 
-## class NullProvider  <a id="cdktf-provider-null-nullprovider"></a>
+## class NullProvider  <a id="cdktf-provider-null-provider-nullprovider"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/null null}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
+__Submodule__: provider
+
 __Extends__: [TerraformProvider](#cdktf-terraformprovider)
 
 ### Initializer
@@ -118,12 +122,12 @@ __Extends__: [TerraformProvider](#cdktf-terraformprovider)
 Create a new {@link https://www.terraform.io/docs/providers/null null} Resource.
 
 ```ts
-new NullProvider(scope: Construct, id: string, config?: NullProviderConfig)
+new provider.NullProvider(scope: Construct, id: string, config?: NullProviderConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[NullProviderConfig](#cdktf-provider-null-nullproviderconfig)</code>)  *No description*
+* **config** (<code>[provider.NullProviderConfig](#cdktf-provider-null-provider-nullproviderconfig)</code>)  *No description*
   * **alias** (<code>string</code>)  Alias name. __*Optional*__
 
 
@@ -140,7 +144,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetAlias() <a id="cdktf-provider-null-nullprovider-resetalias"></a>
+#### resetAlias() <a id="cdktf-provider-null-provider-nullprovider-resetalias"></a>
 
 
 
@@ -152,7 +156,7 @@ resetAlias(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-null-nullprovider-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-null-provider-nullprovider-synthesizeattributes"></a>
 
 
 
@@ -166,11 +170,13 @@ __Returns__:
 
 
 
-## class Resource  <a id="cdktf-provider-null-resource"></a>
+## class Resource  <a id="cdktf-provider-null-resource-resource"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/null/r/resource null_resource}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: resource
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -179,12 +185,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/null/r/resource null_resource} Resource.
 
 ```ts
-new Resource(scope: Construct, id: string, config?: ResourceConfig)
+new resource.Resource(scope: Construct, id: string, config?: ResourceConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[ResourceConfig](#cdktf-provider-null-resourceconfig)</code>)  *No description*
+* **config** (<code>[resource.ResourceConfig](#cdktf-provider-null-resource-resourceconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -209,7 +215,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetTriggers() <a id="cdktf-provider-null-resource-resettriggers"></a>
+#### resetTriggers() <a id="cdktf-provider-null-resource-resource-resettriggers"></a>
 
 
 
@@ -221,7 +227,7 @@ resetTriggers(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-null-resource-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-null-resource-resource-synthesizeattributes"></a>
 
 
 
@@ -235,7 +241,7 @@ __Returns__:
 
 
 
-## struct DataNullDataSourceConfig  <a id="cdktf-provider-null-datanulldatasourceconfig"></a>
+## struct DataNullDataSourceConfig  <a id="cdktf-provider-null-datanulldatasource-datanulldatasourceconfig"></a>
 
 
 
@@ -256,7 +262,7 @@ Name | Type | Description
 
 
 
-## struct NullProviderConfig  <a id="cdktf-provider-null-nullproviderconfig"></a>
+## struct NullProviderConfig  <a id="cdktf-provider-null-provider-nullproviderconfig"></a>
 
 
 
@@ -269,7 +275,7 @@ Name | Type | Description
 
 
 
-## struct ResourceConfig  <a id="cdktf-provider-null-resourceconfig"></a>
+## struct ResourceConfig  <a id="cdktf-provider-null-resource-resourceconfig"></a>
 
 
 
