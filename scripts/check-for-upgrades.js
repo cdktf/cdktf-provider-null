@@ -11,7 +11,7 @@ const actions = require("@actions/core");
 
 // set by the projen file that generates this script
 const CONSTRAINT = "~> 3.0";
-const FQ_PROVIDER_NAME = "null";
+const FQ_PROVIDER_NAME = "hashicorp/null";
 
 (async function main() {
   if (await newerMatchingProviderVersionExists()) {
