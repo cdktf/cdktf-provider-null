@@ -41,7 +41,7 @@ export class Resource extends cdktf.TerraformResource {
       terraformResourceType: 'null_resource',
       terraformGeneratorMetadata: {
         providerName: 'null',
-        providerVersion: '3.2.0',
+        providerVersion: '3.2.1',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

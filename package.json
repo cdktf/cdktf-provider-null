@@ -149,7 +149,7 @@
   "cdktf": {
     "provider": {
       "name": "registry.terraform.io/hashicorp/null",
-      "version": "3.2.0"
+      "version": "3.2.1"
     }
   },
   "resolutions": {
