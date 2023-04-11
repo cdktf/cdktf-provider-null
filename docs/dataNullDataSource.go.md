@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/null/d/data_source n
 #### Initializers <a name="Initializers" id="@cdktf/provider-null.dataNullDataSource.DataNullDataSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/v5/datanulldatasource"
+import "github.com/cdktf/cdktf-provider-null-go/null/datanulldatasource"
 
 datanulldatasource.NewDataNullDataSource(scope Construct, id *string, config DataNullDataSourceConfig) DataNullDataSource
 ```
@@ -280,7 +280,7 @@ func ResetInputs()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-null.dataNullDataSource.DataNullDataSource.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/v5/datanulldatasource"
+import "github.com/cdktf/cdktf-provider-null-go/null/datanulldatasource"
 
 datanulldatasource.DataNullDataSource_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-null.dataNullDataSource.DataNullDataSource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/v5/datanulldatasource"
+import "github.com/cdktf/cdktf-provider-null-go/null/datanulldatasource"
 
 datanulldatasource.DataNullDataSource_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ datanulldatasource.DataNullDataSource_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-null.dataNullDataSource.DataNullDataSource.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/v5/datanulldatasource"
+import "github.com/cdktf/cdktf-provider-null-go/null/datanulldatasource"
 
 datanulldatasource.DataNullDataSource_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -580,7 +580,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-null.dataNullDataSource.DataNullDataSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/v5/datanulldatasource"
+import "github.com/cdktf/cdktf-provider-null-go/null/datanulldatasource"
 
 &datanulldatasource.DataNullDataSourceConfig {
 	Connection: interface{},
