@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/null null}.
 #### Initializers <a name="Initializers" id="@cdktf/provider-null.provider.NullProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/provider"
+import "github.com/cdktf/cdktf-provider-null-go/null/v6/provider"
 
 provider.NewNullProvider(scope Construct, id *string, config NullProviderConfig) NullProvider
 ```
@@ -143,7 +143,7 @@ func ResetAlias()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-null.provider.NullProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/provider"
+import "github.com/cdktf/cdktf-provider-null-go/null/v6/provider"
 
 provider.NullProvider_IsConstruct(x interface{}) *bool
 ```
@@ -175,7 +175,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-null.provider.NullProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/provider"
+import "github.com/cdktf/cdktf-provider-null-go/null/v6/provider"
 
 provider.NullProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -189,7 +189,7 @@ provider.NullProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-null.provider.NullProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/provider"
+import "github.com/cdktf/cdktf-provider-null-go/null/v6/provider"
 
 provider.NullProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-null.provider.NullProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/provider"
+import "github.com/cdktf/cdktf-provider-null-go/null/v6/provider"
 
 &provider.NullProviderConfig {
 	Alias: *string,
