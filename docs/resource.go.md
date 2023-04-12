@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/null/r/resource null
 #### Initializers <a name="Initializers" id="@cdktf/provider-null.resource.Resource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/resource"
+import "github.com/cdktf/cdktf-provider-null-go/null/v6/resource"
 
 resource.NewResource(scope Construct, id *string, config ResourceConfig) Resource
 ```
@@ -273,7 +273,7 @@ func ResetTriggers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-null.resource.Resource.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/resource"
+import "github.com/cdktf/cdktf-provider-null-go/null/v6/resource"
 
 resource.Resource_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-null.resource.Resource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/resource"
+import "github.com/cdktf/cdktf-provider-null-go/null/v6/resource"
 
 resource.Resource_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ resource.Resource_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-null.resource.Resource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/resource"
+import "github.com/cdktf/cdktf-provider-null-go/null/v6/resource"
 
 resource.Resource_IsTerraformResource(x interface{}) *bool
 ```
@@ -551,7 +551,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-null.resource.ResourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/resource"
+import "github.com/cdktf/cdktf-provider-null-go/null/v6/resource"
 
 &resource.ResourceConfig {
 	Connection: interface{},
