@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`null`](https://www.terraform.io/docs/providers/null).
+Refer to the Terraform Registory for docs: [`null`](https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-null.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`null`](https://www.terraform.io/doc
 
 ### NullProvider <a name="NullProvider" id="@cdktf/provider-null.provider.NullProvider"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/null null}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs null}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-null.provider.NullProvider.Initializer"></a>
 
@@ -52,7 +52,7 @@ Must be unique amongst siblings in the same scope
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null#alias NullProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs#alias NullProvider#alias}
 
 ---
 
@@ -379,7 +379,7 @@ public java.lang.String getAlias();
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null#alias NullProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs#alias NullProvider#alias}
 
 ---
 

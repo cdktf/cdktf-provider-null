@@ -1,6 +1,6 @@
 # `data_null_data_source`
 
-Refer to the Terraform Registory for docs: [`data_null_data_source`](https://www.terraform.io/docs/providers/null/d/data_source).
+Refer to the Terraform Registory for docs: [`data_null_data_source`](https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/data-sources/data_source).
 
 # `dataNullDataSource` Submodule <a name="`dataNullDataSource` Submodule" id="@cdktf/provider-null.dataNullDataSource"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_null_data_source`](https://www
 
 ### DataNullDataSource <a name="DataNullDataSource" id="@cdktf/provider-null.dataNullDataSource.DataNullDataSource"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/null/d/data_source null_data_source}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/data-sources/data_source null_data_source}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-null.dataNullDataSource.DataNullDataSource.Initializer"></a>
 
@@ -19,6 +19,7 @@ DataNullDataSource.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -36,7 +37,7 @@ DataNullDataSource.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSource.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSource.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSource.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSource.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSource.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSource.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSource.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSource.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -73,7 +74,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-null.dataNullDataSource.DataNullDataSource.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -115,7 +116,7 @@ If set, its literal value will be stored and returned.
 
 If not, its value defaults to `"default"`. This argument exists primarily for testing and has little practical use.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source#has_computed_default DataNullDataSource#has_computed_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/data-sources/data_source#has_computed_default DataNullDataSource#has_computed_default}
 
 ---
 
@@ -125,7 +126,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/
 
 A map of arbitrary strings that is copied into the `outputs` attribute, and accessible directly for interpolation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source#inputs DataNullDataSource#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/data-sources/data_source#inputs DataNullDataSource#inputs}
 
 ---
 
@@ -431,7 +432,7 @@ DataNullDataSource.isTerraformDataSource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSource.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSource.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSource.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSource.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSource.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSource.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSource.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSource.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -521,10 +522,10 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-null.dataNullDataSource.DataNullDataSource.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -669,6 +670,7 @@ DataNullDataSourceConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -686,7 +688,7 @@ DataNullDataSourceConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSourceConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSourceConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSourceConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSourceConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSourceConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSourceConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -710,10 +712,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-null.dataNullDataSource.DataNullDataSourceConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -779,7 +781,7 @@ If set, its literal value will be stored and returned.
 
 If not, its value defaults to `"default"`. This argument exists primarily for testing and has little practical use.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source#has_computed_default DataNullDataSource#has_computed_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/data-sources/data_source#has_computed_default DataNullDataSource#has_computed_default}
 
 ---
 
@@ -793,7 +795,7 @@ public java.util.Map<java.lang.String, java.lang.String> getInputs();
 
 A map of arbitrary strings that is copied into the `outputs` attribute, and accessible directly for interpolation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source#inputs DataNullDataSource#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/data-sources/data_source#inputs DataNullDataSource#inputs}
 
 ---
 

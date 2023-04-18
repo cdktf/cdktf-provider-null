@@ -1,6 +1,6 @@
 # `null_resource`
 
-Refer to the Terraform Registory for docs: [`null_resource`](https://www.terraform.io/docs/providers/null/r/resource).
+Refer to the Terraform Registory for docs: [`null_resource`](https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/resources/resource).
 
 # `resource` Submodule <a name="`resource` Submodule" id="@cdktf/provider-null.resource"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`null_resource`](https://www.terrafo
 
 ### Resource <a name="Resource" id="@cdktf/provider-null.resource.Resource"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/null/r/resource null_resource}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/resources/resource null_resource}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-null.resource.Resource.Initializer"></a>
 
@@ -346,7 +346,7 @@ resource.Resource_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-null.resource.Resource.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.resource.Resource.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.resource.Resource.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-null.resource.Resource.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-null.resource.Resource.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.resource.Resource.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.resource.Resource.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.resource.Resource.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -443,10 +443,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-null.resource.Resource.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -559,7 +559,7 @@ import "github.com/cdktf/cdktf-provider-null-go/null/v6/resource"
 
 &resource.ResourceConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -574,7 +574,7 @@ import "github.com/cdktf/cdktf-provider-null-go/null/v6/resource"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-null.resource.ResourceConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-null.resource.ResourceConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-null.resource.ResourceConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.resource.ResourceConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.resource.ResourceConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.resource.ResourceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -597,10 +597,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-null.resource.ResourceConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -664,7 +664,7 @@ Triggers *map[string]*string
 
 A map of arbitrary strings that, when changed, will force the null resource to be replaced, re-running any associated provisioners.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/r/resource#triggers Resource#triggers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/resources/resource#triggers Resource#triggers}
 
 ---
 

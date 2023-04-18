@@ -1,6 +1,6 @@
 # `data_null_data_source`
 
-Refer to the Terraform Registory for docs: [`data_null_data_source`](https://www.terraform.io/docs/providers/null/d/data_source).
+Refer to the Terraform Registory for docs: [`data_null_data_source`](https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/data-sources/data_source).
 
 # `dataNullDataSource` Submodule <a name="`dataNullDataSource` Submodule" id="@cdktf/provider-null.dataNullDataSource"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_null_data_source`](https://www
 
 ### DataNullDataSource <a name="DataNullDataSource" id="@cdktf/provider-null.dataNullDataSource.DataNullDataSource"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/null/d/data_source null_data_source}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/data-sources/data_source null_data_source}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-null.dataNullDataSource.DataNullDataSource.Initializer"></a>
 
@@ -352,7 +352,7 @@ datanulldatasource.DataNullDataSource_IsTerraformDataSource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSource.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSource.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSource.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSource.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSource.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSource.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSource.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSource.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -442,10 +442,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-null.dataNullDataSource.DataNullDataSource.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -588,7 +588,7 @@ import "github.com/cdktf/cdktf-provider-null-go/null/v6/datanulldatasource"
 
 &datanulldatasource.DataNullDataSourceConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -604,7 +604,7 @@ import "github.com/cdktf/cdktf-provider-null-go/null/v6/datanulldatasource"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSourceConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSourceConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSourceConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSourceConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSourceConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.dataNullDataSource.DataNullDataSourceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -628,10 +628,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-null.dataNullDataSource.DataNullDataSourceConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -697,7 +697,7 @@ If set, its literal value will be stored and returned.
 
 If not, its value defaults to `"default"`. This argument exists primarily for testing and has little practical use.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source#has_computed_default DataNullDataSource#has_computed_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/data-sources/data_source#has_computed_default DataNullDataSource#has_computed_default}
 
 ---
 
@@ -711,7 +711,7 @@ Inputs *map[string]*string
 
 A map of arbitrary strings that is copied into the `outputs` attribute, and accessible directly for interpolation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/d/data_source#inputs DataNullDataSource#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/data-sources/data_source#inputs DataNullDataSource#inputs}
 
 ---
 
