@@ -1,6 +1,6 @@
 # `null_resource`
 
-Refer to the Terraform Registory for docs: [`null_resource`](https://www.terraform.io/docs/providers/null/r/resource).
+Refer to the Terraform Registory for docs: [`null_resource`](https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/resources/resource).
 
 # `resource` Submodule <a name="`resource` Submodule" id="@cdktf/provider-null.resource"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`null_resource`](https://www.terrafo
 
 ### Resource <a name="Resource" id="@cdktf/provider-null.resource.Resource"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/null/r/resource null_resource}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/resources/resource null_resource}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-null.resource.Resource.Initializer"></a>
 
@@ -346,7 +346,7 @@ Resource.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-null.resource.Resource.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.resource.Resource.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.resource.Resource.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-null.resource.Resource.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-null.resource.Resource.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.resource.Resource.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.resource.Resource.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.resource.Resource.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -443,10 +443,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-null.resource.Resource.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -559,7 +559,7 @@ using HashiCorp.Cdktf.Providers.Null;
 
 new ResourceConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -574,7 +574,7 @@ new ResourceConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-null.resource.ResourceConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-null.resource.ResourceConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-null.resource.ResourceConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.resource.ResourceConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.resource.ResourceConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-null.resource.ResourceConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -597,10 +597,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-null.resource.ResourceConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -664,7 +664,7 @@ public System.Collections.Generic.IDictionary<string, string> Triggers { get; se
 
 A map of arbitrary strings that, when changed, will force the null resource to be replaced, re-running any associated provisioners.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/r/resource#triggers Resource#triggers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/resources/resource#triggers Resource#triggers}
 
 ---
 

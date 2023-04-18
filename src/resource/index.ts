@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/null/r/resource
+// https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/resources/resource
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface ResourceConfig extends cdktf.TerraformMetaArguments {
   /**
   * A map of arbitrary strings that, when changed, will force the null resource to be replaced, re-running any associated provisioners.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/null/r/resource#triggers Resource#triggers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/resources/resource#triggers Resource#triggers}
   */
   readonly triggers?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/null/r/resource null_resource}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/resources/resource null_resource}
 */
 export class Resource extends cdktf.TerraformResource {
 
@@ -30,7 +30,7 @@ export class Resource extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/null/r/resource null_resource} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/resources/resource null_resource} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
