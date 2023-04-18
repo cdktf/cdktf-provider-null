@@ -1,3 +1,7 @@
+# `null_resource`
+
+Refer to the Terraform Registory for docs: [`null_resource`](https://www.terraform.io/docs/providers/null/r/resource).
+
 # `resource` Submodule <a name="`resource` Submodule" id="@cdktf/provider-null.resource"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

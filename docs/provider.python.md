@@ -1,3 +1,7 @@
+# `provider`
+
+Refer to the Terraform Registory for docs: [`null`](https://www.terraform.io/docs/providers/null).
+
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-null.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
