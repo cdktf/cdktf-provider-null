@@ -61,7 +61,8 @@ This project is explicitly not tracking the Terraform null Provider version 1:1.
 These are the upstream dependencies:
 
 - [Terraform CDK](https://cdk.tf)
-- [Terraform null Provider](https://github.com/terraform-providers/terraform-provider-null)
+- [Terraform null Provider](https://registry.terraform.io/providers/hashicorp/null/3.0.0)
+    - This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-null/releases)
 - [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.
