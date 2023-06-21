@@ -1031,12 +1031,12 @@ cacheable-lookup@^7.0.0:
   integrity sha512-+qJyx4xiKra8mZrcwhjMRMUhD5NR1R8esPkzIYxX96JiecFoxAXFuz/GpR3+ev4PE1WamHip78wV0vcmPQtp8w==
 
 cacheable-request@^10.2.8:
-  version "10.2.10"
-  resolved "https://registry.yarnpkg.com/cacheable-request/-/cacheable-request-10.2.10.tgz#1785984a9a4ddec8dd01792232cca474be49a8af"
-  integrity sha512-v6WB+Epm/qO4Hdlio/sfUn69r5Shgh39SsE9DSd4bIezP0mblOlObI+I0kUEM7J0JFc+I7pSeMeYaOYtX1N/VQ==
+  version "10.2.11"
+  resolved "https://registry.yarnpkg.com/cacheable-request/-/cacheable-request-10.2.11.tgz#c2d13a8cef0e4ad8022df761dfac9bb244cf897b"
+  integrity sha512-kn0t0oJnlFo1Nzl/AYQzS/oByMtmaqLasFUa7MUMsiTrIHy8TxSkx2KzWCybE3Nuz1F4sJRGnLAfUGsPe47viQ==
   dependencies:
     "@types/http-cache-semantics" "^4.0.1"
-    get-stream "^6.0.1"
+    get-stream "^7.0.0"
     http-cache-semantics "^4.1.1"
     keyv "^4.5.2"
     mimic-response "^4.0.0"
@@ -2238,6 +2238,11 @@ get-stream@^6.0.0, get-stream@^6.0.1:
   resolved "https://registry.yarnpkg.com/get-stream/-/get-stream-6.0.1.tgz#a262d8eef67aced57c2852ad6167526a43cbf7b7"
   integrity sha512-ts6Wi+2j3jQjqi70w5AlN8DFnkSwC+MqmxEzdEALB2qXZYV3X/b1CTfgPLGJNMeAWxdPfU8FO1ms3NUfaHCPYg==
 
+get-stream@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/get-stream/-/get-stream-7.0.0.tgz#f5695721f481f5581beb9d11cb90c41ddfceea18"
+  integrity sha512-ql6FW5b8tgMYvI4UaoxG3EQN3VyZ6VeQpxNBGg5BZ4xD4u+HJeprzhMMA4OCBEGQgSR+m87pstWMpiVW64W8Fw==
+
 git-raw-commits@^2.0.8:
   version "2.0.11"
   resolved "https://registry.yarnpkg.com/git-raw-commits/-/git-raw-commits-2.0.11.tgz#bc3576638071d18655e1cc60d7f524920008d723"
@@ -3092,9 +3097,9 @@ jsii-rosetta@^5.0.1, jsii-rosetta@~5.1.2:
     yargs "^17.7.2"
 
 jsii-srcmak@^0.1.867:
-  version "0.1.934"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.934.tgz#bd65d58e389aaec7702251538c7ed64b0a0517db"
-  integrity sha512-Gun8xVKjocGs2lEy5/jl4yWilUSqekiSyH1sSjNovmozkDozjBOJnPTBKjfpsYZxrG5mwxKy9ivA7hbtBTbsgg==
+  version "0.1.935"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.935.tgz#a819a6c2b0b098926b70c85e6cc6bf1d9655e365"
+  integrity sha512-zp/S5INWz1+2hN0iRF6iDT1dNtzNvldlD6x2A9nJG839kUUaS1TOPleQZnUxhfJOduJ1HGC/B64swk3H/AeJjA==
   dependencies:
     fs-extra "^9.1.0"
     jsii "~5.1.2"
