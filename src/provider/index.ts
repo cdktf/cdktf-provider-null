@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface NullProviderConfig {
   /**
   * Alias name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs#alias NullProvider#alias}
   */
   readonly alias?: string;

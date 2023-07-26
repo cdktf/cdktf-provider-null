@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface ResourceConfig extends cdktf.TerraformMetaArguments {
   /**
   * A map of arbitrary strings that, when changed, will force the null resource to be replaced, re-running any associated provisioners.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/resources/resource#triggers Resource#triggers}
   */
   readonly triggers?: { [key: string]: string };
