@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-const { CdktfProviderProject } = require("@cdktf/provider-project");
+const { CdktfProviderProject } = require("@maed223/provider-project-test-final");
 const project = new CdktfProviderProject({
   useCustomGithubRunner: false,
   terraformProvider: "null@~> 3.0",
@@ -11,7 +11,7 @@ const project = new CdktfProviderProject({
   constructsVersion: "^10.0.0",
   minNodeVersion: "16.14.0",
   jsiiVersion: "^5.0.1",
-  devDeps: ["@cdktf/provider-project@^0.2.95"],
+  devDeps: ["@maed223/provider-project-test-final@0.0.1"],
 });
 
 project.synth();
