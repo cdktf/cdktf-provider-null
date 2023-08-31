@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "@actions/core": "^1.1.0",
-    "@maed223/provider-project-test-final": "0.0.1",
+    "@maed223/provider-project-test-final": "0.0.2",
     "@types/node": "^16",
     "cdktf": "^0.18.0",
     "cdktf-cli": "^0.18.0",

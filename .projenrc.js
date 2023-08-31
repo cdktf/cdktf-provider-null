@@ -11,7 +11,7 @@ const project = new CdktfProviderProject({
   constructsVersion: "^10.0.0",
   minNodeVersion: "16.14.0",
   jsiiVersion: "^5.0.1",
-  devDeps: ["@maed223/provider-project-test-final@0.0.1"],
+  devDeps: ["@maed223/provider-project-test-final@0.0.2"],
 });
 
 project.synth();

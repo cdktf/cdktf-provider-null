@@ -30,8 +30,6 @@ jobs:
         run: git config --global --add safe.directory $(pwd)
       - name: build
         run: npx projen build
-      - name: changelog file
-        run: cat dist/changelog.md
       - name: Update Version Compatiblity File
         run: yarn update-version-file
       - name: Revert package.json version bump
