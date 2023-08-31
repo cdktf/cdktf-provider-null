@@ -52,6 +52,7 @@ package-lock.json
 !/cdktf.json
 !/README.md
 !/scripts/check-for-upgrades.js
+!/scripts/update-version-file.js
 !/.github/workflows/provider-upgrade.yml
 !/LICENSE
 !/.github/ISSUE_TEMPLATE/config.yml

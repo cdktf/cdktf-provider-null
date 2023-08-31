@@ -6,8 +6,8 @@
       "type": "build"
     },
     {
-      "name": "@cdktf/provider-project",
-      "version": "^0.2.95",
+      "name": "@maed223/provider-project-test-final",
+      "version": "0.0.1",
       "type": "build"
     },
     {
@@ -33,6 +33,10 @@
     {
       "name": "dot-prop",
       "version": "^5.2.0",
+      "type": "build"
+    },
+    {
+      "name": "fs",
       "type": "build"
     },
     {
@@ -66,6 +70,10 @@
     {
       "name": "npm-check-updates",
       "version": "^16",
+      "type": "build"
+    },
+    {
+      "name": "path",
       "type": "build"
     },
     {
