@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/data-sources/data_source
 // generated from terraform resource schema
 
@@ -35,6 +30,20 @@ export class DataNullDataSource extends cdktf.TerraformDataSource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "null_data_source";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataNullDataSource resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataNullDataSource to import
+  * @param importFromId The id of the existing DataNullDataSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/data-sources/data_source#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataNullDataSource to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "null_data_source", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER
