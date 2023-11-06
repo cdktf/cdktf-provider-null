@@ -1,7 +1,9 @@
 
-# Terraform CDK null Provider ~> 3.0
+# Terraform CDK null Provider tracks ~> 3.0
 
 This repo builds and publishes the Terraform null Provider bindings for [CDK for Terraform](https://cdk.tf).
+
+Is based directly on null 3.2.1
 
 ## Available Packages
 
@@ -61,7 +63,7 @@ This project is explicitly not tracking the Terraform null Provider version 1:1.
 These are the upstream dependencies:
 
 - [Terraform CDK](https://cdk.tf)
-- [Terraform null Provider](https://registry.terraform.io/providers/hashicorp/null/3.0.0)
+- [Terraform null Provider](https://registry.terraform.io/providers/hashicorp/null/3.2.1)
     - This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-null/releases)
 - [Terraform Engine](https://terraform.io)
 
