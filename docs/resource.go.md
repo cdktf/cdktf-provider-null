@@ -1,6 +1,6 @@
 # `null_resource`
 
-Refer to the Terraform Registory for docs: [`null_resource`](https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/resources/resource).
+Refer to the Terraform Registory for docs: [`null_resource`](https://registry.terraform.io/providers/hashicorp/null/3.2.2/docs/resources/resource).
 
 # `resource` Submodule <a name="`resource` Submodule" id="@cdktf/provider-null.resource"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`null_resource`](https://registry.te
 
 ### Resource <a name="Resource" id="@cdktf/provider-null.resource.Resource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/resources/resource null_resource}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/null/3.2.2/docs/resources/resource null_resource}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-null.resource.Resource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/v9/resource"
+import "github.com/cdktf/cdktf-provider-null-go/null/resource"
 
 resource.NewResource(scope Construct, id *string, config ResourceConfig) Resource
 ```
@@ -339,7 +339,7 @@ func ResetTriggers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-null.resource.Resource.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/v9/resource"
+import "github.com/cdktf/cdktf-provider-null-go/null/resource"
 
 resource.Resource_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-null.resource.Resource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/v9/resource"
+import "github.com/cdktf/cdktf-provider-null-go/null/resource"
 
 resource.Resource_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ resource.Resource_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-null.resource.Resource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/v9/resource"
+import "github.com/cdktf/cdktf-provider-null-go/null/resource"
 
 resource.Resource_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ resource.Resource_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-null.resource.Resource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/v9/resource"
+import "github.com/cdktf/cdktf-provider-null-go/null/resource"
 
 resource.Resource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -428,7 +428,7 @@ The construct id used in the generated config for the Resource to import.
 
 The id of the existing Resource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/resources/resource#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/null/3.2.2/docs/resources/resource#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -661,7 +661,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-null.resource.ResourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/v9/resource"
+import "github.com/cdktf/cdktf-provider-null-go/null/resource"
 
 &resource.ResourceConfig {
 	Connection: interface{},
@@ -770,7 +770,7 @@ Triggers *map[string]*string
 
 A map of arbitrary strings that, when changed, will force the null resource to be replaced, re-running any associated provisioners.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/resources/resource#triggers Resource#triggers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.2/docs/resources/resource#triggers Resource#triggers}
 
 ---
 

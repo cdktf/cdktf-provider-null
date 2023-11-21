@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs
+// https://registry.terraform.io/providers/hashicorp/null/3.2.2/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +10,13 @@ export interface NullProviderConfig {
   /**
   * Alias name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs#alias NullProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.2/docs#alias NullProvider#alias}
   */
   readonly alias?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs null}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/null/3.2.2/docs null}
 */
 export class NullProvider extends cdktf.TerraformProvider {
 
@@ -37,7 +32,7 @@ export class NullProvider extends cdktf.TerraformProvider {
   * Generates CDKTF code for importing a NullProvider resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NullProvider to import
-  * @param importFromId The id of the existing NullProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NullProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/null/3.2.2/docs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NullProvider to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -49,7 +44,7 @@ export class NullProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs null} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/null/3.2.2/docs null} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +55,7 @@ export class NullProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'null',
       terraformGeneratorMetadata: {
         providerName: 'null',
-        providerVersion: '3.2.1',
+        providerVersion: '3.2.2',
         providerVersionConstraint: '~> 3.0'
       },
       terraformProviderSource: 'null'

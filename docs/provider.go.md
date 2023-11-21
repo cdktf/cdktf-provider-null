@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`null`](https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs).
+Refer to the Terraform Registory for docs: [`null`](https://registry.terraform.io/providers/hashicorp/null/3.2.2/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-null.provider"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`null`](https://registry.terraform.i
 
 ### NullProvider <a name="NullProvider" id="@cdktf/provider-null.provider.NullProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs null}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/null/3.2.2/docs null}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-null.provider.NullProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/v9/provider"
+import "github.com/cdktf/cdktf-provider-null-go/null/provider"
 
 provider.NewNullProvider(scope Construct, id *string, config NullProviderConfig) NullProvider
 ```
@@ -148,7 +148,7 @@ func ResetAlias()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-null.provider.NullProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/v9/provider"
+import "github.com/cdktf/cdktf-provider-null-go/null/provider"
 
 provider.NullProvider_IsConstruct(x interface{}) *bool
 ```
@@ -180,7 +180,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-null.provider.NullProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/v9/provider"
+import "github.com/cdktf/cdktf-provider-null-go/null/provider"
 
 provider.NullProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -194,7 +194,7 @@ provider.NullProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-null.provider.NullProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/v9/provider"
+import "github.com/cdktf/cdktf-provider-null-go/null/provider"
 
 provider.NullProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -208,7 +208,7 @@ provider.NullProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-null.provider.NullProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/v9/provider"
+import "github.com/cdktf/cdktf-provider-null-go/null/provider"
 
 provider.NullProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -237,7 +237,7 @@ The construct id used in the generated config for the NullProvider to import.
 
 The id of the existing NullProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/null/3.2.2/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -393,7 +393,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-null.provider.NullProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/v9/provider"
+import "github.com/cdktf/cdktf-provider-null-go/null/provider"
 
 &provider.NullProviderConfig {
 	Alias: *string,
@@ -418,7 +418,7 @@ Alias *string
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs#alias NullProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.2/docs#alias NullProvider#alias}
 
 ---
 

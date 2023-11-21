@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/data-sources/data_source
+// https://registry.terraform.io/providers/hashicorp/null/3.2.2/docs/data-sources/data_source
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +10,19 @@ export interface DataNullDataSourceConfig extends cdktf.TerraformMetaArguments {
   /**
   * If set, its literal value will be stored and returned. If not, its value defaults to `"default"`. This argument exists primarily for testing and has little practical use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/data-sources/data_source#has_computed_default DataNullDataSource#has_computed_default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.2/docs/data-sources/data_source#has_computed_default DataNullDataSource#has_computed_default}
   */
   readonly hasComputedDefault?: string;
   /**
   * A map of arbitrary strings that is copied into the `outputs` attribute, and accessible directly for interpolation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/data-sources/data_source#inputs DataNullDataSource#inputs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.2/docs/data-sources/data_source#inputs DataNullDataSource#inputs}
   */
   readonly inputs?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/data-sources/data_source null_data_source}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/null/3.2.2/docs/data-sources/data_source null_data_source}
 */
 export class DataNullDataSource extends cdktf.TerraformDataSource {
 
@@ -43,7 +38,7 @@ export class DataNullDataSource extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataNullDataSource resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataNullDataSource to import
-  * @param importFromId The id of the existing DataNullDataSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/data-sources/data_source#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataNullDataSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/null/3.2.2/docs/data-sources/data_source#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataNullDataSource to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -55,7 +50,7 @@ export class DataNullDataSource extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/null/3.2.1/docs/data-sources/data_source null_data_source} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/null/3.2.2/docs/data-sources/data_source null_data_source} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +61,7 @@ export class DataNullDataSource extends cdktf.TerraformDataSource {
       terraformResourceType: 'null_data_source',
       terraformGeneratorMetadata: {
         providerName: 'null',
-        providerVersion: '3.2.1',
+        providerVersion: '3.2.2',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
