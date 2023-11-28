@@ -1,7 +1,3 @@
-# `provider`
-
-Refer to the Terraform Registory for docs: [`null`](https://registry.terraform.io/providers/hashicorp/null/3.2.2/docs).
-
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-null.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
