@@ -1,7 +1,3 @@
-# `null_resource`
-
-Refer to the Terraform Registory for docs: [`null_resource`](https://registry.terraform.io/providers/hashicorp/null/3.2.2/docs/resources/resource).
-
 # `resource` Submodule <a name="`resource` Submodule" id="@cdktf/provider-null.resource"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/null/3.2.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-null.resource.Resource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/v9/resource"
+import "github.com/cdktf/cdktf-provider-null-go/null/resource"
 
 resource.NewResource(scope Construct, id *string, config ResourceConfig) Resource
 ```
@@ -339,7 +335,7 @@ func ResetTriggers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-null.resource.Resource.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/v9/resource"
+import "github.com/cdktf/cdktf-provider-null-go/null/resource"
 
 resource.Resource_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-null.resource.Resource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/v9/resource"
+import "github.com/cdktf/cdktf-provider-null-go/null/resource"
 
 resource.Resource_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ resource.Resource_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-null.resource.Resource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/v9/resource"
+import "github.com/cdktf/cdktf-provider-null-go/null/resource"
 
 resource.Resource_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ resource.Resource_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-null.resource.Resource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/v9/resource"
+import "github.com/cdktf/cdktf-provider-null-go/null/resource"
 
 resource.Resource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -661,7 +657,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-null.resource.ResourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/v9/resource"
+import "github.com/cdktf/cdktf-provider-null-go/null/resource"
 
 &resource.ResourceConfig {
 	Connection: interface{},
