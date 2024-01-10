@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/null/3.2.2/docs/data-sources/data_source
 // generated from terraform resource schema
 
@@ -142,5 +137,25 @@ export class DataNullDataSource extends cdktf.TerraformDataSource {
       has_computed_default: cdktf.stringToTerraform(this._hasComputedDefault),
       inputs: cdktf.hashMapper(cdktf.stringToTerraform)(this._inputs),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      has_computed_default: {
+        value: cdktf.stringToHclTerraform(this._hasComputedDefault),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      inputs: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._inputs),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
