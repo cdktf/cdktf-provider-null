@@ -108,4 +108,18 @@ export class Resource extends cdktf.TerraformResource {
       triggers: cdktf.hashMapper(cdktf.stringToTerraform)(this._triggers),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      triggers: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._triggers),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

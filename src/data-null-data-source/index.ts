@@ -143,4 +143,24 @@ export class DataNullDataSource extends cdktf.TerraformDataSource {
       inputs: cdktf.hashMapper(cdktf.stringToTerraform)(this._inputs),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      has_computed_default: {
+        value: cdktf.stringToHclTerraform(this._hasComputedDefault),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      inputs: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._inputs),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }
