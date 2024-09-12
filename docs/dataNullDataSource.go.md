@@ -4,12 +4,12 @@
 
 ### DataNullDataSource <a name="DataNullDataSource" id="@cdktf/provider-null.dataNullDataSource.DataNullDataSource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/null/3.2.2/docs/data-sources/data_source null_data_source}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/null/3.2.3/docs/data-sources/data_source null_data_source}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-null.dataNullDataSource.DataNullDataSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/v10/datanulldatasource"
+import "github.com/cdktf/cdktf-provider-null-go/null/datanulldatasource"
 
 datanulldatasource.NewDataNullDataSource(scope Construct, id *string, config DataNullDataSourceConfig) DataNullDataSource
 ```
@@ -290,7 +290,7 @@ func ResetInputs()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-null.dataNullDataSource.DataNullDataSource.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/v10/datanulldatasource"
+import "github.com/cdktf/cdktf-provider-null-go/null/datanulldatasource"
 
 datanulldatasource.DataNullDataSource_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-null.dataNullDataSource.DataNullDataSource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/v10/datanulldatasource"
+import "github.com/cdktf/cdktf-provider-null-go/null/datanulldatasource"
 
 datanulldatasource.DataNullDataSource_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datanulldatasource.DataNullDataSource_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-null.dataNullDataSource.DataNullDataSource.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/v10/datanulldatasource"
+import "github.com/cdktf/cdktf-provider-null-go/null/datanulldatasource"
 
 datanulldatasource.DataNullDataSource_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datanulldatasource.DataNullDataSource_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-null.dataNullDataSource.DataNullDataSource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/v10/datanulldatasource"
+import "github.com/cdktf/cdktf-provider-null-go/null/datanulldatasource"
 
 datanulldatasource.DataNullDataSource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataNullDataSource to impo
 
 The id of the existing DataNullDataSource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/null/3.2.2/docs/data-sources/data_source#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/null/3.2.3/docs/data-sources/data_source#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-null.dataNullDataSource.DataNullDataSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-null-go/null/v10/datanulldatasource"
+import "github.com/cdktf/cdktf-provider-null-go/null/datanulldatasource"
 
 &datanulldatasource.DataNullDataSourceConfig {
 	Connection: interface{},
@@ -747,7 +747,7 @@ If set, its literal value will be stored and returned.
 
 If not, its value defaults to `"default"`. This argument exists primarily for testing and has little practical use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.2/docs/data-sources/data_source#has_computed_default DataNullDataSource#has_computed_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.3/docs/data-sources/data_source#has_computed_default DataNullDataSource#has_computed_default}
 
 ---
 
@@ -761,7 +761,7 @@ Inputs *map[string]*string
 
 A map of arbitrary strings that is copied into the `outputs` attribute, and accessible directly for interpolation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.2/docs/data-sources/data_source#inputs DataNullDataSource#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.3/docs/data-sources/data_source#inputs DataNullDataSource#inputs}
 
 ---
 

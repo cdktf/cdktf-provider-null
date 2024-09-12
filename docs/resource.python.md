@@ -4,7 +4,7 @@
 
 ### Resource <a name="Resource" id="@cdktf/provider-null.resource.Resource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/null/3.2.2/docs/resources/resource null_resource}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/null/3.2.3/docs/resources/resource null_resource}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-null.resource.Resource.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 A map of arbitrary strings that, when changed, will force the null resource to be replaced, re-running any associated provisioners.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.2/docs/resources/resource#triggers Resource#triggers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.3/docs/resources/resource#triggers Resource#triggers}
 
 ---
 
@@ -586,7 +586,7 @@ The construct id used in the generated config for the Resource to import.
 
 The id of the existing Resource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/null/3.2.2/docs/resources/resource#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/null/3.2.3/docs/resources/resource#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -928,7 +928,7 @@ triggers: typing.Mapping[str]
 
 A map of arbitrary strings that, when changed, will force the null resource to be replaced, re-running any associated provisioners.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.2/docs/resources/resource#triggers Resource#triggers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.3/docs/resources/resource#triggers Resource#triggers}
 
 ---
 
