@@ -4,7 +4,7 @@
 
 ### DataNullDataSource <a name="DataNullDataSource" id="@cdktf/provider-null.dataNullDataSource.DataNullDataSource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/null/3.2.3/docs/data-sources/data_source null_data_source}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/null/3.2.4/docs/data-sources/data_source null_data_source}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-null.dataNullDataSource.DataNullDataSource.Initializer"></a>
 
@@ -112,7 +112,7 @@ If set, its literal value will be stored and returned.
 
 If not, its value defaults to `"default"`. This argument exists primarily for testing and has little practical use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.3/docs/data-sources/data_source#has_computed_default DataNullDataSource#has_computed_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.4/docs/data-sources/data_source#has_computed_default DataNullDataSource#has_computed_default}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A map of arbitrary strings that is copied into the `outputs` attribute, and accessible directly for interpolation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.3/docs/data-sources/data_source#inputs DataNullDataSource#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.4/docs/data-sources/data_source#inputs DataNullDataSource#inputs}
 
 ---
 
@@ -459,7 +459,7 @@ The construct id used in the generated config for the DataNullDataSource to impo
 
 The id of the existing DataNullDataSource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/null/3.2.3/docs/data-sources/data_source#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/null/3.2.4/docs/data-sources/data_source#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -831,7 +831,7 @@ If set, its literal value will be stored and returned.
 
 If not, its value defaults to `"default"`. This argument exists primarily for testing and has little practical use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.3/docs/data-sources/data_source#has_computed_default DataNullDataSource#has_computed_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.4/docs/data-sources/data_source#has_computed_default DataNullDataSource#has_computed_default}
 
 ---
 
@@ -845,7 +845,7 @@ public java.util.Map<java.lang.String, java.lang.String> getInputs();
 
 A map of arbitrary strings that is copied into the `outputs` attribute, and accessible directly for interpolation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.3/docs/data-sources/data_source#inputs DataNullDataSource#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/null/3.2.4/docs/data-sources/data_source#inputs DataNullDataSource#inputs}
 
 ---
 
